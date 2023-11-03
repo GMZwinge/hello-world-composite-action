@@ -37,5 +37,5 @@ runs:
       shell: bash
     - run: pwd
       shell: bash
-    - run: ${{ github.action_path }}/goodbye.sh
+    - run: sh '${{ github.action_path }}/goodbye.sh'
       shell: bash
