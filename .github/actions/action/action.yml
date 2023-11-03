@@ -37,5 +37,7 @@ runs:
       shell: bash
     - run: pwd
       shell: bash
+    # `sh` is required because the file is not marked as executable in git using
+    #    git update-index --chmod=+x <pathToFile>
     - run: sh '${{ github.action_path }}/goodbye.sh'
       shell: bash
