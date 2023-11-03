@@ -33,5 +33,7 @@ runs:
       shell: bash
     - run: ls -alF "${{ github.action_path }}"
       shell: bash
+    - run: pwd
+      shell: bash
     - run: goodbye.sh
       shell: bash
